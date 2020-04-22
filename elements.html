@@ -1,0 +1,194 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Elements - Landed by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h2 id="logo"><a href="index.html" class="button primary">Home</a></h2>
+					<nav id="nav">
+						<ul>
+						
+							
+							<li><a href="elements.html" class="button primary">Skills</a></li>
+							
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2 style="font-weight: bold;">Skillset</h2>
+						
+						</header>
+
+						<!-- Text -->
+							
+
+								<hr />
+
+								<header>
+									<h3 style="font-weight: bold;">So,</h3>
+								</header>
+							
+								<p style="font-colour: black;">skillset is one of the most essential characteristic for any developer.
+									Software engineers are required to develop, design, maintain, modify, and debug software. These qualities are a combination of both the soft and technical skills needed for efficiency in the workplace. I have been honing my software engineer skills that makes me an excellent candidate for this industry. Some 
+								of the well known languages to me are:</p>
+								<ol style="font-weight: bold;">
+									<li>C/C++(STL)</li>
+									<li>HTML/ HTML5</li>
+									<li>PYTHON</li>
+									<li>CSS</li>
+									<li>Mysql/ Oracle</li>
+									<li>JAVA</li>
+								</ol>
+
+								<span class="image fit main"><img src="images/bvc.png" alt="" /></span>
+
+							
+								<h4>Experience</h4>
+								<blockquote>From typing hello world program it's been a long journey for me and I have come a long way. As you scroll down I have created a small chart depicting my skill set. There comes a lot of bugs when doing the coding. You get disappointed with your own work. But that's an important part of becoming a pro programmer. I need to have patience.
+									 And after a long time of practice and practice, I have started to understand the concept of patience.</blockquote>
+
+								<h4>Memories. Just kidding.</h4>
+								<pre><code>// Your First C++ Program
+									#include <iostream>
+									
+									int main() {
+										std::cout << "Hello World!";
+										return 0;
+									}
+                              	</code></pre>
+							</section>
+
+
+						<!-- Image -->
+							<section>
+								<!DOCTYPE html>
+								<html lang="en">
+								<head>
+								  <meta charset="UTF-8">
+								  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+								  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+								  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+								  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+								  <title>My Chart.js Chart</title>
+								</head>
+								<body>
+								  <div class="container">
+									<canvas id="myChart"></canvas>
+								  </div>
+								  
+								  <script>
+									let myChart = document.getElementById('myChart').getContext('2d');
+								
+									// Global Options
+									Chart.defaults.global.defaultFontFamily = 'Lato';
+									Chart.defaults.global.defaultFontSize = 18;
+									Chart.defaults.global.defaultFontColor = '#777';
+									Chart.plugins.register({
+									beforeDraw: function(chartInstance, easing) {
+									  var ctx = chartInstance.chart.ctx;
+									  ctx.fillStyle = 'transparent'; // your color here
+								  
+									  var chartArea = chartInstance.chartArea;
+									  ctx.fillRect(chartArea.left, chartArea.top, chartArea.right - chartArea.left, chartArea.bottom - chartArea.top);
+									}
+								  });
+								
+									let massPopChart = new Chart(myChart, {
+									  type:'doughnut', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+									  data:{
+										labels:['HTML5', 'C++', 'C', 'Oracle', 'JAVA', 'Python'],
+										datasets:[{
+										  label:'Population',
+										  data:[
+											21,
+											19,
+											17,
+											17,
+											15,
+											11
+										  ],
+										  //backgroundColor:'green',
+										  backgroundColor:[
+											'rgba(255, 99, 132, 0.6)',
+											'rgba(54, 162, 235, 0.6)',
+											'rgba(255, 206, 86, 0.6)',
+											'rgba(75, 192, 192, 0.6)',
+											'rgba(153, 102, 255, 0.6)',
+											'rgba(255, 159, 64, 0.6)',
+											'rgba(255, 99, 132, 0.6)'
+										  ],
+										  borderWidth:1,
+										  borderColor:'#777',
+										  hoverBorderWidth:3,
+										  hoverBorderColor:'#000'
+										}]
+									  },
+									  options:{
+										title:{
+										  display:true,
+										  text:'      Skills',
+										  fontSize:35
+										},
+										legend:{
+										  display:true,
+										  position:'left',
+										  labels:{
+											fontColor:'#000'
+										  }
+										},
+										layout:{
+										  padding:{
+											left:55,
+											right:0,
+											bottom:0,
+											top:0
+										  }
+										},
+										tooltips:{
+										  enabled:true
+										}
+									  }
+									});
+								  </script>
+								</body>
+								</html>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Amanpreet. All rights reserved.</li>
+							</ul>
+							
+
+					</div>
+				</div>
+
+		
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
